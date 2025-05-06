@@ -13,7 +13,8 @@ Original file is located at
 
 # ========================== 1. Environment Setup ==========================
 # Install dependencies (Kaggle API already included)
-!pip install -q pandas numpy scikit-learn xgboost imbalanced-learn matplotlib kaggle
+omport os
+os.system("pip install -q pandas numpy scikit-learn xgboost imbalanced-learn matplotlib kaggle")
 
 # ========================== 2. Auto Configure Kaggle API ==========================
 import os
