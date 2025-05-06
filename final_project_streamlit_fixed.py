@@ -72,8 +72,16 @@ model = models[model_choice]
 
 if st.button("🚀 Train Model"):
     st.info("Training in progress...")
-    X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.2, random_state=42, stratify=y)
+# 检查标签类别数量，避免 stratify 报错
+if y.nunique() > 1:
+    stratify_flag = y
+else:
+    stratify_flag = None
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42, stratify=stratify_flag
+)
+
 
     pipeline = Pipeline(steps=[
         ('preprocessor', preprocessor),
