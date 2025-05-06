@@ -1,0 +1,4 @@
+race,gender,age,weight,admission_type_id,discharge_disposition_id,admission_source_id,time_in_hospital,diag_1,diag_2,diag_3,num_lab_procedures,num_procedures,num_medications,number_outpatient,number_emergency,number_inpatient,number_diagnoses,max_glu_serum,A1Cresult,metformin,repaglinide,nateglinide,glimepiride,glipizide,glyburide,pioglitazone,rosiglitazone,acarbose,insulin,change,diabetesMed,readmitted
+Caucasian,Female,[70-80],?,1,1,7,1,250.83,276,648,41,0,1,0,0,0,9,>300,None,No,No,No,No,No,No,No,No,No,No,No,Yes,>30
+AfricanAmerican,Male,[60-70],?,1,1,7,3,250.13,250.1,250.8,59,0,18,0,0,0,6,>200,>7,Yes,No,No,Yes,No,No,No,No,No,Up,Yes,NO
+Hispanic,Female,[50-60],?,1,1,7,2,414,411,250.8,11,6,13,0,0,1,9,None,None,No,No,No,No,Yes,No,No,No,No,Steady,No,>30
